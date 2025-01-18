@@ -92,12 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         question: "Citez les moyens permettant de rentabiliser le développement d'une application Android.",
         answers: [
-          "Publicité ",
+          "Publicité",
           "Utilisation de bibliothèques open-source.",
           "Tests automatisés.",
-          "achats intégrés.",
+          "Achats intégrés.",
         ],
-        correctAnswers: ["Publicité et achats intégrés.","achats intégrés"],
+        correctAnswers: ["Publicité", "Achats intégrés"],
       },
       {
         question: "Quelle est la plus récente version d'Android dans la liste suivante?",
@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         question: "Quels sont les sous-langages de SQL qui ne sont pas supportés sous SQLite?",
-        answers: ["LCT", "LCD", "PL/SQL", "SQL Standard"],
-        correctAnswers: ["LCT", "LCD","PL/SQL"],
+        answers: ["LCT", "LCD", "PL/SQL", "T-SQL", "SQL Standard"],
+        correctAnswers: ["LCT", "LCD", "PL/SQL", "T-SQL"],
       },
       {
         question: "Sous Android, l'API Mapsforge est:",
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         question: "Quels sont les types de données supportés dans une base de données SQLite?",
         answers: ["REAL", "BLOB", "VARCHAR", "INTEGER"],
-        correctAnswers: ["REAL", "BLOB","INTEGER"],
+        correctAnswers: ["REAL", "BLOB", "INTEGER"],
       },
       {
         question: "A quoi sert Gradle dans un projet Android?",
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "MapQuest API",
           "OpenStreetMap API",
         ],
-        correctAnswers: ["Google Maps Directions API", "Mapbox Directions API"],
+        correctAnswers: ["Google Maps Directions API", "Mapbox Directions API", "MapQuest API"],
       },
       {
         question: "Quelle est la différence entre un APK Debug et un APK Release?",
