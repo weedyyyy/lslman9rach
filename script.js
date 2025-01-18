@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Tests automatisés.",
           "achats intégrés.",
         ],
-        correctAnswers: ["Publicité."],
+        correctAnswers: ["Publicité.","achats intégrés."],
       },
       {
         question: "Quelle est la plus récente version d'Android dans la liste suivante?",
