@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
         correctAnswers: ["VARCHAR"],
       },
       {
-        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez les options possibles pour cet attribut.",
+        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez 2 options possibles pour cet attribut.",
         answers: ["center", "matrix", "fit center", "fitxy"],
         correctAnswers: ["center", "matrix", "fit center", "fitxy"],
       },
       {
-        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez les types de ces configurations?",
+        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez 2 types de ces configurations?",
         answers: ["taille", "densité", "langue", "version d’Android"],
         correctAnswers: ["taille", "densité", "langue", "version d’Android"],
       },
@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
       },
       {
-        question: "Citez les moyens permettant de rentabiliser le développement d'une application Android.",
+        question: "Citez 2 moyens permettant de rentabiliser le développement d'une application Android.",
         answers: [
           "Publicité et achats intégrés.",
           "Utilisation de bibliothèques open-source.",
           "Tests automatisés.",
-          "achats intégrés.",
+          "Optimisation du code.",
         ],
-        correctAnswers: ["Publicité.","achats intégrés."],
+        correctAnswers: ["Publicité et achats intégrés."],
       },
       {
         question: "Quelle est la plus récente version d'Android dans la liste suivante?",
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         question: "Lors de la publication d'une application Android, la version qui permet de la tester par un groupe restreint de testeurs est appelée:",
         answers: ["Alpha", "Beta", "Release", "Stable"],
-        correctAnswers: ["Beta"],
+        correctAnswers: ["Alpha"],
       },
       {
         question: "Google Analytics permet de:",
@@ -133,6 +133,78 @@ document.addEventListener("DOMContentLoaded", () => {
           "Toutes les réponses ci-dessus.",
         ],
         correctAnswers: ["Toutes les réponses ci-dessus."],
+      },
+      {
+        question: "Comme pour les activités, chaque fragment possède un cycle de vie, quelles sont les méthodes callback d'un fragment, qui sont lancées avant la méthode onCreateView()?",
+        answers: ["onCreate()", "onAttach()", "onStart()", "onResume()"],
+        correctAnswers: ["onCreate()", "onAttach()"],
+      },
+      {
+        question: "La vue graphique Gallery hérite de:",
+        answers: ["AdapterView", "ViewGroup", "TextView", "ImageView"],
+        correctAnswers: ["AdapterView"],
+      },
+      {
+        question: "Quels sont les types de données supportés dans une base de données SQLite?",
+        answers: ["REAL", "BLOB", "VARCHAR", "INTEGER"],
+        correctAnswers: ["REAL", "BLOB"],
+      },
+      {
+        question: "A quoi sert Gradle dans un projet Android?",
+        answers: [
+          "Construire un projet Android et gérer les dépendances.",
+          "Créer des interfaces utilisateur.",
+          "Gérer les permissions.",
+          "Stocker des données locales.",
+        ],
+        correctAnswers: ["Construire un projet Android et gérer les dépendances."],
+      },
+      {
+        question: "A quoi sert la classe 'R.java' dans un projet Android?",
+        answers: [
+          "Gérer les ressources de l'application.",
+          "Gérer les permissions.",
+          "Créer des interfaces utilisateur.",
+          "Stocker des données locales.",
+        ],
+        correctAnswers: ["Gérer les ressources de l'application."],
+      },
+      {
+        question: "Dans une application Android, quelle est la permission qui permet d'interroger un serveur distant?",
+        answers: ["INTERNET", "CAMERA", "CALL_PHONE", "WRITE_EXTERNAL_STORAGE"],
+        correctAnswers: ["INTERNET"],
+      },
+      {
+        question: "Citez 2 services de navigation permettant d'obtenir dans une application Android, un itinéraire entre 2 points géographiques?",
+        answers: [
+          "Google Maps Directions API",
+          "Mapbox Directions API",
+          "MapQuest API",
+          "OpenStreetMap API",
+        ],
+        correctAnswers: ["Google Maps Directions API", "Mapbox Directions API"],
+      },
+      {
+        question: "Quelle est la différence entre un APK Debug et un APK Release?",
+        answers: [
+          "L'APK Debug contient des informations de débogage, tandis que l'APK Release est optimisé pour la publication.",
+          "L'APK Debug est signé, tandis que l'APK Release ne l'est pas.",
+          "L'APK Debug est plus petit que l'APK Release.",
+          "L'APK Debug ne peut pas être installé sur un appareil.",
+        ],
+        correctAnswers: [
+          "L'APK Debug contient des informations de débogage, tandis que l'APK Release est optimisé pour la publication.",
+        ],
+      },
+      {
+        question: "Citer 2 moyens permettant de rentabiliser le développement d'une application Android.",
+        answers: [
+          "Publicité et achats intégrés.",
+          "Utilisation de bibliothèques open-source.",
+          "Tests automatisés.",
+          "Optimisation du code.",
+        ],
+        correctAnswers: ["Publicité et achats intégrés."],
       },
     ];
   
