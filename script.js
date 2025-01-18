@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
         correctAnswers: ["VARCHAR"],
       },
       {
-        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez 2 options possibles pour cet attribut.",
+        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez les options possibles pour cet attribut.",
         answers: ["center", "matrix", "fit center", "fitxy"],
         correctAnswers: ["center", "matrix", "fit center", "fitxy"],
       },
       {
-        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez 2 types de ces configurations?",
+        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez les types de ces configurations?",
         answers: ["taille", "densité", "langue", "version d’Android"],
         correctAnswers: ["taille", "densité", "langue", "version d’Android"],
       },
@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
       },
       {
-        question: "Citez 2 moyens permettant de rentabiliser le développement d'une application Android.",
+        question: "Citez les moyens permettant de rentabiliser le développement d'une application Android.",
         answers: [
           "Publicité et achats intégrés.",
           "Utilisation de bibliothèques open-source.",
           "Tests automatisés.",
-          "Optimisation du code.",
+          "achats intégrés.",
         ],
-        correctAnswers: ["Publicité et achats intégrés."],
+        correctAnswers: ["Publicité."],
       },
       {
         question: "Quelle est la plus récente version d'Android dans la liste suivante?",
@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let currentQuestionIndex = 0;
     let score = 0;
+    let wrongAnswers = []; // Store questions the user got wrong
   
     const questionElement = document.getElementById("question");
     const answersElement = document.getElementById("answers");
@@ -146,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultContainer = document.getElementById("result-container");
     const correctAnswersDisplay = document.getElementById("correct-answers");
     const wrongAnswersDisplay = document.getElementById("wrong-answers");
+    const questionNumberDisplay = document.getElementById("question-number");
   
     function loadQuestion() {
       const currentQuestion = questions[currentQuestionIndex];
@@ -162,6 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
         li.appendChild(document.createTextNode(answer));
         answersElement.appendChild(li);
       });
+  
+      // Update question number display
+      questionNumberDisplay.textContent = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
   
       // Reset UI for new question
       resultContainer.classList.add("hidden");
@@ -187,6 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (isCorrect) {
         score++;
+      } else {
+        // Store the wrong question, user's answers, and correct answers
+        wrongAnswers.push({
+          question: currentQuestion.question,
+          userAnswers: selectedAnswers,
+          correctAnswers: currentQuestion.correctAnswers,
+        });
       }
   
       // Display results
@@ -210,7 +222,21 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.classList.add("hidden");
         nextBtn.classList.add("hidden");
         correctAnswersDisplay.textContent = `Your final score is ${score}/${questions.length}.`;
-        wrongAnswersDisplay.textContent = "";
+  
+        // Display wrong answers
+        if (wrongAnswers.length > 0) {
+          wrongAnswersDisplay.innerHTML = "<h3>Questions you got wrong:</h3>";
+          wrongAnswers.forEach((wrongAnswer, index) => {
+            wrongAnswersDisplay.innerHTML += `
+              <p><strong>Question ${index + 1}:</strong> ${wrongAnswer.question}</p>
+              <p><strong>Your answers:</strong> ${wrongAnswer.userAnswers.join(", ")}</p>
+              <p><strong>Correct answers:</strong> ${wrongAnswer.correctAnswers.join(", ")}</p>
+              <hr>
+            `;
+          });
+        } else {
+          wrongAnswersDisplay.textContent = "You got all questions correct!";
+        }
       }
     }
   
