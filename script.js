@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         question: "Lors de la publication d'une application Android, la version qui permet de la tester par un groupe restreint de testeurs est appelée:",
         answers: ["Alpha", "Beta", "Release", "Stable"],
-        correctAnswers: ["Alpha"],
+        correctAnswers: ["Beta"],
       },
       {
         question: "Google Analytics permet de:",
