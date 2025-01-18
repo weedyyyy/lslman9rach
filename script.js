@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
         correctAnswers: ["VARCHAR"],
       },
       {
-        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez 2 options possibles pour cet attribut.",
+        question: "Pour afficher et adapter une image dans une ImageView, il suffit d'utiliser l'attribut scaleType. Citez les options possibles pour cet attribut.",
         answers: ["center", "matrix", "fit center", "fitxy"],
         correctAnswers: ["center", "matrix", "fit center", "fitxy"],
       },
       {
-        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez 2 types de ces configurations?",
+        question: "Afin d'adapter une application Android aux différents types d'appareils, il suffit d'adapter ses vues à plusieurs configurations. Citez les types de ces configurations?",
         answers: ["taille", "densité", "langue", "version d’Android"],
         correctAnswers: ["taille", "densité", "langue", "version d’Android"],
       },
@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
       },
       {
-        question: "Citez 2 moyens permettant de rentabiliser le développement d'une application Android.",
+        question: "Citez les moyens permettant de rentabiliser le développement d'une application Android.",
         answers: [
-          "Publicité et achats intégrés.",
+          "Publicité ",
           "Utilisation de bibliothèques open-source.",
           "Tests automatisés.",
-          "Optimisation du code.",
+          "achats intégrés.",
         ],
-        correctAnswers: ["Publicité et achats intégrés."],
+        correctAnswers: ["Publicité et achats intégrés.","achats intégrés"],
       },
       {
         question: "Quelle est la plus récente version d'Android dans la liste suivante?",
@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         question: "Quels sont les sous-langages de SQL qui ne sont pas supportés sous SQLite?",
-        answers: ["LCT", "LCD", "PL/SQL", "T-SQL"],
-        correctAnswers: ["LCT", "LCD"],
+        answers: ["LCT", "LCD", "PL/SQL", "SQL Standard"],
+        correctAnswers: ["LCT", "LCD","PL/SQL"],
       },
       {
         question: "Sous Android, l'API Mapsforge est:",
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         question: "Quels sont les types de données supportés dans une base de données SQLite?",
         answers: ["REAL", "BLOB", "VARCHAR", "INTEGER"],
-        correctAnswers: ["REAL", "BLOB"],
+        correctAnswers: ["REAL", "BLOB","INTEGER"],
       },
       {
         question: "A quoi sert Gradle dans un projet Android?",
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         correctAnswers: ["INTERNET"],
       },
       {
-        question: "Citez 2 services de navigation permettant d'obtenir dans une application Android, un itinéraire entre 2 points géographiques?",
+        question: "Citez les services de navigation permettant d'obtenir dans une application Android, un itinéraire entre 2 points géographiques?",
         answers: [
           "Google Maps Directions API",
           "Mapbox Directions API",
